@@ -9,7 +9,7 @@ interface Book3DProps {
 
 export function Book3D({ novel, coverUrl, onRead }: Book3DProps) {
   return (
-    <div className="group relative w-full aspect-[2/3] max-w-[280px] mx-auto cursor-pointer" style={{ perspective: "1500px" }}>
+    <div className="group relative w-full aspect-[2/3] max-w-[280px] mx-auto cursor-pointer" style={{ perspective: "1500px" }} onClick={onRead}>
       <div className="w-full h-full transition-transform duration-700 ease-out group-hover:-translate-y-4" style={{ transformStyle: "preserve-3d" }}>
         
         {/* Book shadow on the ground */}
