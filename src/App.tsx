@@ -587,7 +587,7 @@ export default function App() {
                     <h3 className="font-display text-lg uppercase tracking-widest text-ivory">Arti visive</h3>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                  <div className="flex overflow-x-auto gap-6 pb-6 pt-2 snap-x snap-mandatory hide-scrollbar">
                     {ARTPIECES.filter(art => {
                       if (activeTab === "art") return art.tags.includes("Illustrazione") || art.tags.includes("Simbolismo");
                       if (activeTab === "photography") return art.tags.includes("Fotografia") || art.tags.includes("Venezia");
@@ -595,12 +595,12 @@ export default function App() {
                     }).map((art, index) => (
                       <motion.div
                         key={art.id}
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, x: 30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
                         whileHover={{ y: -6, scale: 1.01 }}
-                        className="bg-midnight/45 border border-ivory/5 hover:border-gold-accent/30 rounded-xs group transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-md hover:shadow-xl cursor-default"
+                        className="w-[85vw] md:w-[320px] shrink-0 snap-start bg-midnight/45 border border-ivory/5 hover:border-gold-accent/30 rounded-xs group transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-md hover:shadow-xl cursor-default"
                       >
                         <div className="relative aspect-square bg-[#0b1322] border-b border-ivory/5 flex items-center justify-center overflow-hidden">
                           <img 

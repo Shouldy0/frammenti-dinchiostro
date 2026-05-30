@@ -84,3 +84,12 @@ html {
   animation: gleam-sweep 3s infinite ease-in-out;
   pointer-events: none;
 }
+
+/* Hide scrollbar for clean carousels */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
