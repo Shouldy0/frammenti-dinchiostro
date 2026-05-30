@@ -12,10 +12,11 @@ import { Novel } from "../types";
 interface HeroProps {
   onExploreClick: () => void;
   onNovelClick?: (novel: Novel) => void;
+  currentIndex: number;
+  setCurrentIndex: (idx: number | ((prev: number) => number)) => void;
 }
 
-export default function Hero({ onExploreClick, onNovelClick }: HeroProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export default function Hero({ onExploreClick, onNovelClick, currentIndex, setCurrentIndex }: HeroProps) {
   const activeNovel = NOVELS[currentIndex];
 
   const handleNext = () => {

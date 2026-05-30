@@ -58,6 +58,7 @@ export default function App() {
   const [selectedArt, setSelectedArt] = useState<Artpiece | null>(null);
   const [readerNovel, setReaderNovel] = useState<Novel | null>(null);
   const [readPost, setReadPost] = useState<Blogpost | null>(null);
+  const [heroNovelIndex, setHeroNovelIndex] = useState(0);
   
 
 
@@ -231,7 +232,12 @@ export default function App() {
           active={wpDevMode} 
           onInspect={() => { setWpActiveFile("index.php"); setWpStudioOpen(true); }}
         >
-          <Hero onExploreClick={() => scrollToSection("introduce")} onNovelClick={setReaderNovel} />
+          <Hero 
+            onExploreClick={() => scrollToSection("introduce")} 
+            onNovelClick={setReaderNovel} 
+            currentIndex={heroNovelIndex}
+            setCurrentIndex={setHeroNovelIndex}
+          />
         </WpTemplateBlock>
 
         {/* 2. Manifesto Introduction wrapped in Content About block */}
@@ -478,7 +484,10 @@ export default function App() {
                         <Book3D 
                           novel={novel} 
                           coverUrl={index === 0 ? "/cover-1.jpeg" : index === 1 ? "/cover-2.jpg" : "/cover-3.jpg"} 
-                          onRead={() => setReaderNovel(novel)} 
+                          onRead={() => {
+                            setHeroNovelIndex(index);
+                            scrollToSection("hero");
+                          }} 
                         />
                       </motion.div>
                     ))}

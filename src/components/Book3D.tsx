@@ -37,10 +37,10 @@ export function Book3D({ novel, coverUrl, onRead }: Book3DProps) {
           </div>
           <button
             onClick={(e) => { e.stopPropagation(); onRead(); }}
-            className="text-xs uppercase tracking-widest font-mono text-ivory hover:text-gold-accent flex items-center gap-1 transition duration-300 w-fit"
+            className="text-[10px] uppercase tracking-widest font-mono text-gold-accent hover:text-gold-bright flex items-center gap-1.5 transition duration-300 w-fit"
           >
             <BookOpen className="w-3.5 h-3.5" />
-            {novel.id === "echialtrove" ? "leggi" : <>Apri &rarr;</>}
+            Scopri di più &rarr;
           </button>
         </div>
 
