@@ -59,3 +59,28 @@ html {
   animation: fog-move 28s infinite ease-in-out reverse;
 }
 
+
+@keyframes gleam-sweep {
+  0% { transform: translateX(-100%) skewX(-15deg); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateX(200%) skewX(-15deg); opacity: 0; }
+}
+
+.animate-gleam {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-gleam::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: translateX(-100%) skewX(-15deg);
+  animation: gleam-sweep 3s infinite ease-in-out;
+  pointer-events: none;
+}

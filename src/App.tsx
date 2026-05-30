@@ -6,6 +6,7 @@
 import { useState, useEffect, FormEvent, ReactNode } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Book3D } from "./components/Book3D";
+import { Particles } from "./components/Particles";
 import { 
   Feather, 
   Sparkles, 
@@ -149,6 +150,7 @@ export default function App() {
     <div className="relative min-h-screen bg-midnight font-sans overflow-x-hidden select-none md:select-text">
       {/* Decorative grain backdrop */}
       <div className="fixed inset-0 paper-grain pointer-events-none opacity-40 z-50" />
+      <Particles />
 
       {/* Aesthetic Top Navigation Bar wrapped in WP Header block */}
       <WpTemplateBlock 
@@ -493,12 +495,13 @@ export default function App() {
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {POEMS.map((poem) => (
+                    {POEMS.map((poem, index) => (
                       <motion.div
                         key={poem.id}
-                        initial={{ opacity: 0, scale: 0.98 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
+                        initial={{ opacity: 0, scale: 0.98, y: 20 }}
+                        whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
                         whileHover={{ y: -6, scale: 1.01 }}
                         className="p-8 bg-midnight/80 border border-ivory/5 rounded-xs hover:border-gold-accent/30 group transition-all duration-500 relative flex flex-col justify-between shadow-md hover:shadow-xl cursor-default overflow-hidden"
                       >
@@ -539,12 +542,13 @@ export default function App() {
                       if (activeTab === "art") return art.tags.includes("Illustrazione") || art.tags.includes("Simbolismo");
                       if (activeTab === "photography") return art.tags.includes("Fotografia") || art.tags.includes("Venezia");
                       return true;
-                    }).map((art) => (
+                    }).map((art, index) => (
                       <motion.div
                         key={art.id}
-                        initial={{ opacity: 0, y: 15 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
                         whileHover={{ y: -6, scale: 1.01 }}
                         className="bg-midnight/45 border border-ivory/5 hover:border-gold-accent/30 rounded-xs group transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-md hover:shadow-xl cursor-default"
                       >
@@ -693,7 +697,7 @@ export default function App() {
               <button
                 type="submit"
                 disabled={newsletterLoading}
-                className="px-6 py-3 bg-forest text-gold-accent border border-gold-accent/40 rounded-sm font-mono text-xs uppercase tracking-widest hover:bg-gold-accent hover:text-midnight hover:border-gold-bright transition duration-300 disabled:opacity-40 cursor-pointer flex items-center justify-center gap-2 font-bold"
+                className="px-6 py-3 bg-forest text-gold-accent border border-gold-accent/40 rounded-sm font-mono text-xs uppercase tracking-widest hover:bg-gold-accent hover:text-midnight hover:border-gold-bright transition duration-300 disabled:opacity-40 cursor-pointer flex items-center justify-center gap-2 font-bold overflow-hidden animate-gleam"
               >
                 {newsletterLoading ? "Sigillando..." : "Richiedi Accesso"}
               </button>
@@ -812,7 +816,7 @@ export default function App() {
 
                   <button
                     type="submit"
-                    className="w-full px-6 py-3 bg-forest border border-gold-accent/30 text-gold-accent hover:bg-gold-accent hover:text-midnight font-mono text-xs uppercase tracking-widest rounded-sm transition duration-300 flex items-center justify-center gap-2 cursor-pointer"
+                    className="w-full px-6 py-3 bg-forest border border-gold-accent/30 text-gold-accent hover:bg-gold-accent hover:text-midnight font-mono text-xs uppercase tracking-widest rounded-sm transition duration-300 flex items-center justify-center gap-2 cursor-pointer overflow-hidden animate-gleam"
                   >
                     <Send className="w-4 h-4" />
                     Spedisci Epistola &rarr;
