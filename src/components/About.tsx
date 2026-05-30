@@ -68,11 +68,18 @@ export default function About() {
         {/* Dynamic hand-drawn blueprint flex system */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center max-w-3xl mx-auto mb-16">
           
-          {/* Left Axis Column: Vertical Wave */}
-          <div className="col-span-12 md:col-span-3 flex justify-center items-center select-none md:border-r border-gold-accent/10 md:pr-8 py-2">
+          {/* Mobile horizontal divider */}
+          <div className="md:hidden flex justify-center w-full mb-8 opacity-70">
+            <svg className="w-16 h-4 stroke-gold-accent fill-none" viewBox="0 0 100 20">
+              <path d="M0,10 Q25,0 50,10 T100,10" strokeWidth="2" />
+            </svg>
+          </div>
+
+          {/* Left Axis Column: Vertical Wave (Desktop only) */}
+          <div className="hidden md:flex col-span-3 justify-center items-center select-none border-r border-gold-accent/10 pr-8 py-2">
             
             {/* The animated wavy line */}
-            <div className="w-10 h-32 md:h-48 flex items-center justify-center">
+            <div className="w-10 h-48 flex items-center justify-center">
               <svg className="h-full w-full text-gold-accent/60" viewBox="0 0 40 300" preserveAspectRatio="none">
                 <motion.path
                   d="M 20 0 Q 32 37.5, 20 75 Q 8 112.5, 20 150 Q 32 187.5, 20 225 Q 8 262.5, 20 300"
