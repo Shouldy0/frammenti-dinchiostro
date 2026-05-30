@@ -19,20 +19,213 @@ export const NOVELS: Novel[] = [
       {
         id: "c1-campanile",
         number: 1,
-        title: "L'ingranaggio Spezzato",
-        content: "Il ticchettio era l'unica costante nella casa di Adam. Un suono pesante, metallico, che sembrava provenire non dagli orologi appesi alla parete, ma dalle pareti stesse, dal legno dei mobili, forse dalle ossa di suo padre Carlo.\n\nQuella sera, la pioggia batteva contro i vetri delle finestre di Roma con una foga inusuale. Adam teneva tra le mani l'orologio d'oro promesso da sua madre Maria. Non si muoveva. Le lancette erano ferme alle tre e tre minuti di un giorno qualunque di dieci anni prima, l'istante esatto in cui lei era spirata.\n\nCarlo, seduto vicino al camino spento, fissava il vuoto. 'Mettilo via, Adam. Quel metallo porta solo cattivi ritorni', sussurrò senza voltarsi. Ma la curiosità di un sedicenne è un fiume in piena che non conosce dighe. Adam sentiva che dietro quel ticchettio fantasma si nascondeva l'anima stessa di sua madre."
+        title: "Settembre 2016",
+        content: `Settembre 2016
+
+La fine dell'estate si sentiva ancora nell'aria. Tutto era tranquillo nel quartiere Coppedè, a Roma. Adam aveva passato l'intera estate chiuso in camera sua — a differenza dei suoi coetanei, non era per niente entusiasta dell'inizio della scuola. Erano passati cinque anni da quando sua madre se n'era andata, ma per lui il tempo sembrava essersi fermato. Le giornate continuavano a essere lunghe e silenziose. Passava ore a leggere libri sugli orologi, senza sapere bene perché, solo che lo faceva sentire meno solo. La notte, quando il soffitto era troppo bianco e il buio non bastava, stringeva l'orologio da taschino che lei gli aveva regalato e ci passava il pollice sopra, piano, sul bordo smussato.
+
+Più le giornate passavano, più il primo giorno di scuola si avvicinava come qualcosa di inevitabile. Non aveva rivolto parola neppure a Juan — e Juan lo aveva chiamato ogni giorno fino alla settimana prima, poi aveva smesso.
+
+Aveva passato tutta la notte sveglio a pensare a come sarebbe stato il primo giorno di scuola. L’idea che tutti lo avrebbero trattato diversamente lo divorava — non gli era mai piaciuto stare al centro dell’attenzione. Stranamente, la notte era trascorsa velocemente e quando posò gli occhi sulla sveglia posta sul comodino, erano le sette in punto.
+
+Si alzò di scatto, le coperte rimaste aggrovigliate, e corse in bagno a lavarsi.
+
+Si fermò di colpo davanti alla scrivania. Aprì il cassetto in cui custodiva l'orologio. Prima di addormentarsi, era solito posarlo sul letto e fissarlo a lungo — il metallo dorato sotto la luce fioca, le imperfezioni sottili che ormai conosceva a memoria.
+
+Sull'orologio era incisa una torre. 
+
+Lo prese tra le mani. Le dita gli tremavano appena. Lo aprì — e si fermò. La lancetta si era mossa rispetto alla sera prima. Non in avanti, come avrebbe dovuto. All'indietro.
+
+«Sbrigati, Adam! Farai tardi anche oggi» gridò suo padre Carlo dal piano di sotto.
+
+«Arrivo, papà» rispose, asciugandosi frettolosamente il viso.
+
+Non capiva come fosse possibile. La voglia di smontarlo era forte — ma era l'ultimo oggetto che sua madre gli aveva messo in mano, e quella paura era più grande di qualsiasi curiosità. Lo fece ruotare tra le dita un istante, poi lo infilò in tasca e uscì dalla stanza.
+
+Mentre scendeva le scale, si fermò a metà della rampa. Il respiro corto, la testa vuota. Per un secondo non sapeva dove stava andando, né perché. Carlo, dal basso, alzò lo sguardo.
+
+«Sei di nuovo rimasto tutta la notte sveglio a leggere quel libro sugli orologi?»
+
+Adam trasalì. Non aveva detto nulla al padre dell'orologio, anche se avrebbe tanto voluto — chiedergli perché la lancetta si fosse mossa, capire se sapesse qualcosa. Ma le parole gli morivano in gola ogni volta.
+
+Suo padre era un uomo alto, dall'aspetto sempre curato — giacca anche in casa, occhi neri che non perdevano nulla. Adam aveva preso tutto dalla madre: il fisico esile, gli occhi blu, i capelli ricci e neri sempre in disordine.
+
+«Mi stai ascoltando, Adam?»
+
+«Sì, papà, scusami» rispose, cercando di sembrare tranquillo. «Ma adesso devo proprio andare.»
+
+Carlo lo guardò uscire, senza aggiungere altro.
+
+Adam si mise lo zaino in spalla. Sulla soglia esitò un istante, la gola stretta. Avrebbe voluto voltarsi, dirgli qualcosa, ma non lo fece. Chiuse la porta dietro di sé.
+
+Rimasto solo, Carlo andò in salone. Si fermò davanti alla foto di famiglia, l'ultima in cui c'erano tutti e tre. Maria sorrideva. Ogni volta che guardava quell'immagine, sentiva un nodo alla gola che gli impediva di respirare. Passò le dita sul vetro della cornice, sfiorando il viso di sua moglie. «Maria,» sussurrò nel silenzio della casa vuota. «Non so più come raggiungerlo.»
+
+Fuori, l'aria era fresca. Completamente assorto nei suoi pensieri, Adam cercava di non ricordare l'odore di disinfettante. Le tende sempre chiuse, perché la luce infastidiva sua madre. La sua voce, sempre più debole. L'ultima volta che l'aveva vista viva, lui aveva undici anni. Gli aveva preso la piccola mano nella sua — troppo fredda — e gli aveva sussurrato una frase che non aveva mai dimenticato.
+
+"Tre passi avanti, tre passi indietro."
+
+L'aveva ripetuta così tante volte negli anni che ormai gli sembrava un ritmo, un respiro. Tre avanti, tre indietro. Ma dove voleva portarlo?
+
+Nel quartiere tutti ricordavano la morte di Maria Bernabei. All'inizio, cinque anni prima, i vicini avevano portato teglie di cibo e offerto aiuto. Ma col passare del tempo le cose erano cambiate. C'era un atteggiamento nuovo: sguardi sfuggenti, chiacchiere a mezza voce, sussurri. Come se la morte fosse una malattia contagiosa. Mentre camminava a testa bassa, Adam sentiva le loro voci alle spalle:
+
+«Povero ragazzo. Ha lo stesso sguardo perso di suo padre. Strana famiglia.»
+
+Adam strinse la mano sul petto, sentendo il contorno dell'orologio attraverso il tessuto della giacca, e accelerò il passo.
+
+L'edificio della scuola sembrava un ospedale. Troppo grande, finestre sbarrate al piano terra, intonaco scrostato. Cercò di confondersi nel flusso degli studenti, gli occhi fissi a terra per non incrociare lo sguardo di nessuno. Solo quando fu oltre il cancello alzò la testa. Appoggiato a un muretto, c'era un ragazzo più alto di lui. Camicia bianca, jeans neri, lo sguardo fisso nel vuoto.
+
+Era Juan. Non si vedevano dall'inizio dell'estate.
+
+Adam esitò. Si era convinto che nessuno potesse capirlo, che fosse meglio restare nel suo silenzio. Ma il peso delle chiamate ignorate si fece sentire. Sistemò lo zaino sulla spalla e gli andò incontro.
+
+«Ehi,» disse Adam, provando a forzare un sorriso.
+
+Juan si voltò di scatto. Lo guardò per un lungo secondo. «Adam. Alla fine sei vivo. Non ti sei più fatto sentire per tre mesi.»
+
+«Lo so, scusa,» mormorò Adam, abbassando lo sguardo. «Avevo bisogno di stare un po' da solo.»
+
+Juan gli diede una spinta leggera sulla spalla, come per sbloccare la tensione. «Tutto a posto. La prossima estate ti trascino al lago con me.»
+
+«Certo,» mentì Adam.
+
+Juan inclinò la testa, scrutandolo. «Hai una faccia strana. Che ti succede?»
+
+Adam esitò un attimo. Sapeva che a lui non poteva nascondere molto. «Credo di avere un mistero tra le mani.»
+
+«Ancora a caccia di guai?» sorrise Juan.
+
+«Questo è diverso,» mormorò Adam, stringendo la mano in tasca attorno al metallo freddo dell'orologio. «Dopo scuola ti faccio vedere.»
+
+Insieme varcarono il cancello.
+
+La lezione di storia sembrò non finire mai. Adam non riusciva a stare fermo; continuava a spostare il peso sulla sedia, gli occhi fissi sull'orologio appeso al muro sopra la lavagna. Quando finalmente la campanella suonò, la classe esplose. In un attimo i corridoi furono invasi dal rumore degli studenti.
+
+Usciti, cercarono un angolo isolato del cortile, lontano dal flusso principale. Adam si guardò alle spalle per assicurarsi che nessuno stesse prestando loro attenzione. Poi, con un respiro profondo, tirò fuori l'orologio dalla tasca. Il sole del primo pomeriggio accese l'oro della cassa.
+
+«Bello,» mormorò Juan, avvicinandosi per guardare meglio. «Che strano, però. Ha due pomelli diversi?»
+
+«Sì,» rispose Adam. «Sui miei libri non c'è niente del genere. Quella grande serve a caricare il meccanismo, immagino. L'altra... non lo so. Non ho ancora provato a toccarla.»
+
+«E cosa aspetti?» lo sfidò Juan.
+
+Adam esitò. Sentiva il metallo contro i polpastrelli, l'ultimo legame fisico con sua madre. Ma la curiosità era troppa.
+
+Prese il piccolo pomello secondario tra due dita. Eseguì tre lenti giri all'indietro. Uno. Due. Tre.
+
+L'aria si fece improvvisamente secca, pungente. Il vento smise di soffiare, congelandosi intorno a lui. Adam si guardò intorno, smarrito. La luce del sole sembrava diversa.
+
+Poi, nitida come se gli stesse parlando all'orecchio, sentì la voce di sua madre:
+"Tre passi avanti... tre passi indietro."
+
+Un brivido freddo gli corse lungo la schiena. E poi, tutto tornò normale di colpo.
+
+«E cosa aspetti?» disse Juan.
+
+Adam sussultò, quasi lasciando cadere l'orologio. «Cosa? Ma... ma l'ho appena girata.»
+
+«Ma che dici,» rise Juan, indicando le mani dell'amico. «Non l'hai ancora nemmeno sfiorata.»
+
+Adam sentì un colpo allo stomaco. Il pomello era intatto. Il vento soffiava di nuovo caldo. Qualcosa era successo, ne aveva la certezza. E lo sguardo confuso del suo amico glielo confermava.`
       },
       {
         id: "c2-campanile",
         number: 2,
-        title: "Il Guardiano del Tempo",
-        content: "Artena sorgeva tra le rocce selvagge come una fortezza medievale dimenticata dal sole. Adam camminava lungo i vicoli ripidi pavimentati in pietra lavica scura, sentendo il peso della borsa di cuoio sulla spalla.\n\nNel vecchio e polveroso laboratorio di suo nonno, l'aria profumava di olio minerale, polvere fine e otone antico. C'erano centinaia di sveglie, pendoli e carillon accatastati sui ripiani, tutti curiosamente fermi allo stesso secondo.\n\n'Il tempo non scorre dritto, ragazzo mio', gli aveva detto una volta il vecchio orologiaio con voce roca e stanca. 'Il tempo gira su se stesso come un ingranaggio delicato. E a volte, se un dente si scheggia o si rompe, rimaniamo incastrati per sempre nello stesso identico giorno, a rivivere all'infinito lo stesso stupido dolore. Ma se trovi l'orologio regolatore... potrai riparare la ruota'. Adam estrasse l'orologio di Maria, e gli occhi stanchi del nonno si spalancarono per il terrore."
-      },
-      {
-        id: "c3-campanile",
-        number: 3,
-        title: "La Regola dei Tre Passi",
-        content: "Tre passi avanti, tre passi indietro. Quella era la regola misteriosa incisa sul retro dello scrigno d'acciaio nascosto sotto il tavolo da lavoro del nonno.\n\nCon dita tremanti, Adam inserì la piccola chiave d'oro nell'orologio di sua madre e iniziò a caricarlo lentamente. Udì un ronzio sommesso, un battito cardiaco artificiale che iniziò a vibrare intensamente nel palmo della sua mano.\n\nAll'improvviso, le ombre nella stanza si allungarono a dismisura, distorcendosi in sagome spaventose. Il rumore del vento fuori cessò di colpo. La pioggia si fermò a mezz'aria, gocce sospese a pochi centimetri dal vetro, come perle di cristallo fluttuanti.\n\nAdam guardò fuori dalla finestra: tutta Artena era immobile, pietrificata in un fotogramma sospeso. Aveva appena spezzato la sacra linea del presente. Ma l'orologio ora andava all'indietro, e un fischio acuto nell'aria avvertiva che il Guardiano del Paradosso stava già arrivando per cancellarlo."
+        title: "Febbraio 1979",
+        content: `I due amici si salutarono prendendo due strade diverse. Adam non ricordava neppure come si fosse congedato da Juan. Aveva percorso la strada verso casa come un automa, la mente bloccata su quei pochi secondi nel cortile. L'aria secca. La voce di sua madre. E poi Juan che ripeteva l'esatta, identica frase.
+
+Appena varcata la soglia di casa, si buttò sul divano. Tirò fuori l'orologio e lo appoggiò sul tavolino basso, come se avesse paura a tenerlo in mano. Lo fissò a lungo. «Cosa sei?» sussurrò.
+
+Gli tornò in mente il giorno in cui glielo aveva dato. Era l'autunno dei suoi undici anni, poche settimane prima che la malattia se la portasse via. Maria era seduta sul bordo del letto, la pelle già troppo pallida. Sembrava esausta, ma gli aveva sorriso.
+
+«Questo è per te» gli aveva detto, posandogli l'orologio sul palmo della mano. «Apparteneva a tuo nonno. Purtroppo, non ha portato molta fortuna alla nostra famiglia.»
+
+«Perché me lo dai adesso?» le aveva chiesto lui, stringendo il metallo pesante.
+
+Lei non aveva risposto subito. Gli aveva accarezzato i riccioli scuri con le dita gelide. «Perché tu sei diverso da noi, Adam. Tu capirai come fermarlo.»
+
+Adam scacciò il ricordo serrando le palpebre. Solo in quel momento si accorse che suo padre era fermo sulla soglia del salotto. Carlo guardò l'orologio d'oro abbandonato sul tavolino, poi incrociò lo sguardo del figlio.
+
+«Manca tanto anche a me,» disse Carlo. La sua voce era bassa, appesantita da una malinconia antica.
+
+Adam abbassò gli occhi. Avrebbe voluto parlargli della lancetta, di Juan, dell'aria che si era fermata. Ma tra loro il silenzio era diventato un muro troppo spesso da abbattere.
+
+«Ho preparato la cena,» aggiunse Carlo, intuendo che non ci sarebbe stata alcuna risposta. «Vieni a tavola.»
+
+Mangiarono nella penombra della cucina. L'unico suono era il raschiare delle posate contro la ceramica. Adam non toccò quasi il cibo; continuava a fissare il vuoto, il pollice che strofinava nervosamente la tasca dei pantaloni dove aveva rimesso l'orologio.
+
+«Non hai fame?» chiese Carlo.
+
+«Non molto,» rispose Adam, rigirando la pasta nel piatto.
+
+Carlo lo osservò per un lungo momento. C'era un'ombra nei suoi occhi scuri, come se volesse dirgli qualcosa di importante, ma alla fine si limitò a sospirare. «Lascia stare, allora. Vai a riposare.»
+
+Adam annuì, alzandosi da tavola. «Buonanotte, papà.»
+
+«Buonanotte, Adam.»
+
+Adam salì in camera, la mano ancorata in tasca sul metallo dell'orologio. Avrebbe voluto studiarlo con calma, smontarne i segreti nel buio. Ma non fece in tempo. Crollò addormentato sul letto, ancora vestito.
+
+Erano le tre passate quando un suono lo fece scattare a sedere. Il cuore gli martellava contro le costole. Rimase immobile nel buio, in ascolto. Il telefono del salotto squillava. Uno squillo tagliente, sordo, quasi metallico.
+
+Aspettò che suo padre rispondesse, ma non successe nulla.
+
+Scese dal letto e si affacciò nel corridoio. La porta di Carlo era socchiusa. Adam sentì il respiro del padre: lento, pesante. Profondo. Come faceva a non sentire quel trillo assordante?
+
+Scese le scale a piedi nudi. L'aria nel salotto si era fatta all'improvviso fredda e innaturalmente secca, la stessa sensazione del pomeriggio nel cortile della scuola.
+Sollevò il ricevitore.
+
+«Pronto?» mormorò, con la gola chiusa.
+
+Dall'altra parte c'era solo un fruscio. Non il classico rumore di linea, ma il suono di un vento lontano, come se il telefono fosse appoggiato a terra in un deserto.
+
+«Chi è?» insistette Adam.
+
+Nessuna voce rispose. Ma prima che la comunicazione cadesse, sentì un rumore. Distinto. Netto. Un ticchettio meccanico.
+Lento. Regolare. Che scandiva secondi troppo lunghi, come se l'ingranaggio stesse girando all'indietro.
+
+Poi, solo il tu-tu di linea morta.
+
+Adam riagganciò il ricevitore. Lo fissò nel buio per un lungo minuto. E decise che di questa storia, a suo padre, non avrebbe detto una sola parola.
+
+Più tardi, l'aria nella stanza di Adam si fece all'improvviso secca. Lui dormiva, ignaro.
+
+Fuori, nel cortile, una sagoma scura si stagliava contro il chiarore del lampione. Un uomo avvolto in un lungo cappotto nero osservava attentamente la finestra del ragazzo. Tirò fuori dalla tasca un orologio d'oro. Sulla superficie era incisa una rosa, ma la luce non vi si rifletteva: sembrava venirne assorbita, divorata dal metallo.
+
+Lo aprì con un click secco. Fissò le lancette che giravano all'indietro — lente, inesorabili — poi alzò di nuovo lo sguardo verso il vetro.
+
+La sua maschera bianca, completamente liscia e priva di lineamenti, brillava sotto la luna. C'erano solo due fori oscuri all'altezza degli occhi.
+
+Senza fare il minimo rumore, l'uomo fece un passo indietro e venne inghiottito dall'ombra.
+
+________________
+
+Febbraio 1979
+
+A sedici anni, Maria passava ore a fissare il disegno tecnico di un orologio appeso al muro del salotto. Lo aveva tracciato suo padre. Enrico Bernabei aveva una passione per gli ingranaggi sin da piccolo; passava intere giornate con pinzette e molle sparse sul tavolo. Alla fine, quell'ossessione era diventata il suo mestiere. Era così abile da essere apprezzato in tutta Roma e provincia.
+
+Aveva aperto una piccola bottega in un quartiere nuovo, una zona in espansione con palazzi freschi di calce e vetrine ancora vuote. Maria amava guardarlo lavorare, seguendo ipnotizzata le sue dita sicure che domavano la meccanica.
+
+Il tempo passato in quel negozio era il suo rifugio. L'odore del metallo e dell'olio fine, il ticchettio asincrono di decine di pendole, i granelli di polvere che danzavano nei coni di luce. Suo padre che le spiegava pazientemente la differenza tra un bilanciere e uno scappamento, e lei che annuiva, felice solo di essergli accanto.
+
+Quel pomeriggio, Maria decise di passare in bottega dopo la scuola. Mentre camminava lungo il marciapiede, percepì un cambiamento impercettibile: l'aria si stava facendo improvvisamente fredda, secca e sottile nei polmoni.
+Arrivata davanti alla vetrina, notò che l'insegna era spenta. La porta d'ingresso era accostata.
+
+«Starà lavorando a quel progetto segreto,» mormorò tra sé per farsi coraggio, anche se un brivido le percorse le braccia.
+
+Spinse la porta ed entrò.
+Il fiato le morì in gola.
+
+La bottega era devastata. Vetrine in frantumi, cassetti sventrati, migliaia di minuscoli ingranaggi sparsi sul pavimento di graniglia come semi metallici. Fece un passo indietro, pronta a fuggire, ma sentì uno spostamento d'aria alle sue spalle. Si voltò lentamente.
+
+A sbarrarle l'uscita c'era un uomo imponente, avvolto in un lungo cappotto nero. Il volto era celato da una maschera bianca, completamente liscia: non c'era accenno di naso né di bocca. Solo due fori oscuri all'altezza degli occhi.
+
+«Dov'è tuo padre?» le chiese. La voce non sembrava umana: era metallica, piatta, priva di respiro.
+
+«Non... non lo so,» balbettò Maria, indietreggiando fino a sbattere contro il bancone.
+
+L'uomo non disse altro. Allungò una mano guantata verso di lei. Maria aprì la bocca per gridare, ma il suono venne inghiottito. L'aria intorno a loro sembrò collassare su se stessa, implodendo in un lampo muto, e il negozio si ritrovò improvvisamente vuoto.
+
+“Il tempo è solo un concetto. Siamo noi a dargli una forma.”`
       }
     ]
   },
