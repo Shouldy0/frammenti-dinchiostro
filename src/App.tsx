@@ -484,10 +484,7 @@ export default function App() {
                         <Book3D 
                           novel={novel} 
                           coverUrl={index === 0 ? "/cover-1.jpeg" : index === 1 ? "/cover-2.jpg" : "/cover-3.jpg"} 
-                          onRead={() => {
-                            setHeroNovelIndex(index);
-                            scrollToSection("hero");
-                          }} 
+                          onRead={() => setReaderNovel(novel)} 
                         />
                       </motion.div>
                     ))}
