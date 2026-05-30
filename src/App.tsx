@@ -602,17 +602,17 @@ export default function App() {
                         whileHover={{ y: -6, scale: 1.01 }}
                         className="bg-midnight/45 border border-ivory/5 hover:border-gold-accent/30 rounded-xs group transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-md hover:shadow-xl cursor-default"
                       >
-                        {/* Immersive placeholder that feels like ink wash / dark illustration instead of broken image URLs */}
-                        <div className="relative aspect-video bg-[#0b1322] border-b border-ivory/5 flex items-center justify-center p-4 overflow-hidden">
-                          {/* Ink blot effect overlay */}
-                          <div className="absolute inset-0 opacity-20 bg-radial-gradient from-forest/80 to-midnight pointer-events-none" />
+                        <div className="relative aspect-square bg-[#0b1322] border-b border-ivory/5 flex items-center justify-center overflow-hidden">
+                          <img 
+                            src={art.imageUrl} 
+                            alt={art.title} 
+                            className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700 ease-in-out contrast-[1.15] saturate-[1.1] brightness-[1.05]" 
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-midnight via-midnight/10 to-transparent opacity-90" />
                           
-                          {/* Symbolic geometric grid representation */}
-                          <div className="relative z-10 w-full h-full border border-gold-accent/10 flex flex-col items-center justify-center text-center space-y-2 group-hover:scale-105 transition-transform duration-500 select-none">
-                            <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-gold-accent/40">{art.medium}</span>
-                            <div className="font-display text-xs text-gold-accent/80 tracking-widest max-w-[80%] uppercase">{art.title}</div>
-                            <div className="w-6 h-[1px] bg-gold-accent/30" />
-                            <span className="font-sans text-[10px] text-ivory/40">{art.tags.join(" | ")}</span>
+                          <div className="absolute bottom-4 left-4 right-4 z-10 flex flex-col text-left space-y-1">
+                            <div className="font-display text-xs text-gold-accent tracking-widest uppercase truncate">{art.title}</div>
+                            <span className="font-mono text-[9px] uppercase tracking-wider text-ivory/70 truncate">{art.medium}</span>
                           </div>
                         </div>
 
@@ -1039,12 +1039,12 @@ export default function App() {
                   {selectedArt.title}
                 </h3>
 
-                <div className="aspect-video bg-[#0b1322] rounded-xs border border-ivory/10 flex flex-col items-center justify-center p-4 select-none mb-6 relative overflow-hidden">
-                  <div className="absolute inset-0 opacity-10 bg-radial-gradient from-gold-accent to-transparent" />
-                  <div className="font-display text-sm text-gold-accent/80 tracking-widest select-none uppercase">
-                    {selectedArt.title}
-                  </div>
-                  <span className="font-sans text-[10px] text-ivory/40 mt-1">{selectedArt.medium}</span>
+                <div className="w-full bg-[#0b1322] rounded-xs border border-ivory/10 flex items-center justify-center p-1 select-none mb-6 relative overflow-hidden">
+                  <img 
+                    src={selectedArt.imageUrl} 
+                    alt={selectedArt.title} 
+                    className="w-full max-h-[60vh] object-contain rounded-xs contrast-[1.1] saturate-[1.05]" 
+                  />
                 </div>
 
                 <div className="space-y-4">

@@ -350,36 +350,44 @@ export const POEMS: Poem[] = [
 
 export const ARTPIECES: Artpiece[] = [
   {
-    id: "ore-perdute",
-    title: "L'Archivio delle Ore Perdute",
-    medium: "Digital Illustration & Ink Wash",
-    story: "Questa opera raffigura un immenso orologio alchemico le cui lancette sono composte da rami d'ulivo secchi e fumo denso. Rappresenta il tentativo incessante di ordinare i frammenti della nostra memoria prima che svaniscano nel vento del dimenticatoio.",
-    imageSeed: "alchemical_clock_ink_drawing",
-    tags: ["Illustrazione", "Mistero", "Tempo"]
+    id: "spirito-linfa",
+    title: "Lo Spirito di Linfa",
+    medium: "Illustrazione Concept",
+    story: "Un guardiano nato dalla corteccia e dalle foglie, in cui la natura prende coscienza di se stessa. Un profilo che emerge silenzioso dai boschi dell'inconscio.",
+    imageUrl: "/art/art1.jpg",
+    tags: ["Illustrazione", "Natura", "Simbolismo"]
   },
   {
-    id: "sussurri-rami",
-    title: "Sussurri tra i Rami d'Inchiostro",
-    medium: "Symbolic & Narrative Illustration",
-    story: "Una foresta avvolta nella nebbia invernale, dove le silhouettes dei rami si intrecciano fino a formare la fisionomia di una mano protesa verso un raggio di luce argentea. Esprime la costante tensione umana tra solitudine e comunione.",
-    imageSeed: "misty_forest_monochrome_silhouettes",
-    tags: ["Illustrazione", "Simbolismo", "Natura"]
+    id: "offerta-nuda",
+    title: "Offerta Nuda",
+    medium: "Matita su Carta",
+    story: "Due mani tese, segnate dal tempo e dalla fatica. Sono aperte in un gesto che rappresenta contemporaneamente un'estrema supplica e il dono più puro di sé.",
+    imageUrl: "/art/art2.jpg",
+    tags: ["Illustrazione", "Realismo", "Anatomia"]
   },
   {
-    id: "canale-mistero",
-    title: "Silenzio di Pietra",
-    medium: "Cinematic Mood Photography",
-    story: "Scattata alle tre del mattino durante la marea autunnale, cattura l'istante in cui l'arco di un ponte in pietra si specchia nell'acqua nera immobile, creando un portale perfettamente simmetrico ad anello.",
-    imageSeed: "venice_arch_bridge_night_reflection",
-    tags: ["Fotografia", "Venezia", "Minimalista"]
+    id: "radici-di-carne",
+    title: "Radici di Carne",
+    medium: "Grafite e Chiaroscuro",
+    story: "La tensione estrema di una presa indissolubile, in cui le vene affiorano sulla pelle come radici impazzite, aggrappandosi disperatamente alla vita e all'altro.",
+    imageUrl: "/art/art3.jpg",
+    tags: ["Illustrazione", "Psicologia", "Anatomia"]
   },
   {
-    id: "penna-calamaio",
-    title: "Il Custode dei Ricordi",
-    medium: "Still Life Detail Photography",
-    story: "La luce soffusa di una sola candela illumina la punta d'oro di un calamaio del diciannovesimo secolo, con un piccolo rivolo di inchiostro nero che penetra le fibre grezze di una lettera scritta a mano mai spedita.",
-    imageSeed: "aged_parchment_pen_ink_spill",
-    tags: ["Fotografia", "Strumenti", "Memoria"]
+    id: "sguardo-predatore",
+    title: "Sguardo di Predatore",
+    medium: "Acquerello",
+    story: "Il fiero profilo di un rapace, i cui piumaggi sfumano nell'aria e nell'acqua. Un dipinto che cattura l'istinto puro e la gelida, immobile maestosità della libertà.",
+    imageUrl: "/art/art4.jpg",
+    tags: ["Acquerello", "Natura", "Colori"]
+  },
+  {
+    id: "frammentazione-io",
+    title: "Frammentazione dell'Io",
+    medium: "Tecnica Mista",
+    story: "Un ritratto psicologico esplosivo. Linee spezzate, frammenti geometrici e un intenso, viscerale sfondo rosso incarnano il caos del conflitto interiore e della scomposizione dell'identità.",
+    imageUrl: "/art/art5.jpg",
+    tags: ["Simbolismo", "Astratto", "Psicologia"]
   }
 ];
 

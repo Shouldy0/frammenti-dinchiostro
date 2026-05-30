@@ -36,7 +36,7 @@ export interface Artpiece {
   title: string;
   medium: string;
   story: string;
-  imageSeed: string; // used for picsum or aesthetic styling
+  imageUrl: string; 
   tags: string[];
 }
 
