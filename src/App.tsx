@@ -5,6 +5,7 @@
 
 import { useState, useEffect, FormEvent, ReactNode } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import { Book3D } from "./components/Book3D";
 import { 
   Feather, 
   Sparkles, 
@@ -464,54 +465,19 @@ export default function App() {
                   </div>
                   
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    {NOVELS.map((novel) => (
+                    {NOVELS.map((novel, index) => (
                       <motion.div
                         key={novel.id}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                        whileHover={{ y: -6, scale: 1.01 }}
-                        className="p-6 md:p-8 bg-[#0b1622]/40 border border-ivory/5 rounded-xs flex flex-col justify-between hover:border-gold-accent/30 group transition-all duration-500 relative overflow-hidden shadow-lg hover:shadow-2xl cursor-default"
+                        transition={{ duration: 0.8, delay: index * 0.1 }}
                       >
-                        {/* Interactive floating color reflection inside card */}
-                        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-gradient-to-br from-cyan-950/10 via-transparent to-amber-950/20" />
-                        
-                        {/* Dynamic sliding border decoration */}
-                        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-gold-accent/30 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
-                        {/* Elegant atmospheric background block shadow */}
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-gold-accent/2 rounded-full blur-2xl pointer-events-none group-hover:bg-gold-accent/5 transition duration-500" />
-                        
-                        <div>
-                          <div className="flex justify-between items-start mb-6">
-                            <span className="text-[10px] font-mono tracking-widest text-gold-accent uppercase border border-gold-accent/20 px-2 py-0.5 rounded-sm">
-                              {novel.genre}
-                            </span>
-                            <span className="font-mono text-xs text-gold-accent/50">{novel.publishedYear}</span>
-                          </div>
-
-                          <h4 className="text-2xl font-display text-ivory mb-4 group-hover:text-gold-accent transition duration-300">
-                             {novel.title}
-                          </h4>
-
-                          <p className="font-serif text-sm text-gold-accent/80 leading-relaxed mb-6 italic line-clamp-3">
-                            &ldquo;{novel.excerpt}&rdquo;
-                          </p>
-
-                          <p className="font-sans text-xs text-ivory/80 leading-relaxed line-clamp-4">
-                            {novel.synopsis}
-                          </p>
-                        </div>
-
-                        <div className="flex items-center gap-3 mt-8 pt-6 border-t border-ivory/5">
-                          <button
-                            onClick={() => setReaderNovel(novel)}
-                            className="text-xs uppercase tracking-widest font-mono text-ivory hover:text-gold-accent flex items-center gap-1 cursor-pointer transition duration-300"
-                          >
-                            <BookOpen className="w-3.5 h-3.5" />
-                            {novel.id === "echialtrove" ? "leggi una poesia" : <>Apri Capitolo &rarr;</>}
-                          </button>
-                        </div>
+                        <Book3D 
+                          novel={novel} 
+                          coverUrl={index === 0 ? "/cover-1.jpeg" : index === 1 ? "/cover-2.jpg" : "/cover-3.jpg"} 
+                          onRead={() => setReaderNovel(novel)} 
+                        />
                       </motion.div>
                     ))}
                   </div>

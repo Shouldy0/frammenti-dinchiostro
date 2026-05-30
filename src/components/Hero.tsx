@@ -257,7 +257,7 @@ export default function Hero({ onExploreClick, onNovelClick }: HeroProps) {
                   /* Custom Real Book Cover using the user uploaded cover image */
                   <div className={`absolute top-[2px] bottom-[2px] left-[12px] right-[2px] select-none overflow-hidden rounded-xs border transition-all duration-500 ${coverStyle.outerBorder} ${coverStyle.glow}`}>
                     <img 
-                      src={`/api/cover/${currentIndex}`}
+                      src={currentIndex === 0 ? "/cover-1.jpeg" : currentIndex === 1 ? "/cover-2.jpg" : "/cover-3.jpg"}
                       alt={activeNovel.title}
                       className="w-full h-full object-fill select-none pointer-events-none transition-transform duration-700 group-hover:scale-105"
                       referrerPolicy="no-referrer"
