@@ -385,21 +385,21 @@ export const ARTPIECES: Artpiece[] = [
 
 export const BLOGPOSTS: Blogpost[] = [
   {
-    id: "psicologia-segreti",
-    title: "La psicologia del segreto nelle narrazioni mistery",
+    id: "scrittura-creativa-ombra",
+    title: "L'Inchiostro e l'Ombra: La Scrittura Creativa come Atto di Sopravvivenza",
     date: "14 Maggio 2026",
-    category: "Riflessioni e Scrittura",
-    excerpt: "Un segreto non è solo un vuoto d'informazione: è una forza di gravità psicologica. Esploriamo come i personaggi si deformino attorno alle proprie ombre.",
-    content: "Nelle storie di suspense, tendiamo a concentrarci sulla rivelazione finale, l'indizio nascosto, la risoluzione del puzzle. Ma il vero thriller psicologico abita nelle ore che precedono quel momento. Abita nella tensione di chi custodisce un segreto, nelle micro-fratture del comportamento quotidiano. Un personaggio timoroso di essere svelato parla meno, si muove con eccessiva precisione, evita lo specchio dell'interlocutore. Costruire la suspense significa dipingere questa invisibile gabbia psicologica.",
+    category: "Laboratorio Creativo",
+    excerpt: "Scrivere non è inventare mondi dal nulla. È scendere nel buio della propria mente con una lanterna tremolante, scavando tra le rovine dei ricordi.",
+    content: "La scrittura creativa viene spesso confusa con la pura fantasia, con il dono di chi sa tessere storie leggere come l'aria. Ma per me, la vera narrazione è un processo molto più oscuro e materico. È un atto di archeologia dell'anima.\n\nQuando inizio un nuovo romanzo, non parto mai da una struttura perfetta. Parto da una crepa. Un'immagine ossessiva, un ricordo distorto, un oggetto lasciato a prendere polvere in un cassetto—come un vecchio orologio d'oro le cui lancette girano all'indietro. La scrittura diventa lo scalpello con cui allargo quella crepa, cercando di capire cosa ci sia sepolto sotto.\n\nI personaggi che creo non sono burattini. Sono frammenti di me stesso e delle persone che ho perso, frammenti che lottano per ritrovare una voce. Lasciarli parlare sulla carta richiede un coraggio silenzioso: il coraggio di affrontare i propri demoni, di guardarli negli occhi senza distogliere lo sguardo. Ogni capitolo è un passo verso l'abisso e, allo stesso tempo, l'unico modo per risalirne. La scrittura non ci guarisce dalle nostre cicatrici, ma ci insegna a leggerle. E in quel linguaggio segreto, intriso di inchiostro e di ombra, scopriamo di non essere soli.",
     readTime: "5 min"
   },
   {
-    id: "arte-frammento",
-    title: "L'arte del frammento: intrecciare romanzi partendo dal caos",
+    id: "poesia-eco-altrove",
+    title: "Frammenti Dispersi: La Poesia come Sospensione del Tempo",
     date: "28 Aprile 2026",
-    category: "Processo Creativo",
-    excerpt: "Non scrivo mai in modo lineare. Preferisco appuntare frammenti di immagini, versi disallineati, volti intravisti sul treno, e poi unire i punti.",
-    content: "C'è un'idea romantica dello scrittore che si siede alla scrivania e riversa fiumi ininterrotti di storie dall'inizio alla fine. Nella mia esperienza, la scrittura è un atto di restauro archeologico. Si trovano cocci, scaglie, brandelli sparsi di conversazioni mute. Solo in un secondo momento, mettendo insieme le tessere in un mosaico apparentemente caotico, scopro il disegno primordiale. Per questo la mia identità artistica è Frammenti d'Inchiostro: perché la vita stessa si manifesta solo a frammenti.",
+    category: "Riflessioni",
+    excerpt: "Se il romanzo è un lungo viaggio attraverso la tempesta, la poesia è il lampo che illumina per un istante il paesaggio sconosciuto.",
+    content: "Esiste una linea sottilissima che separa il silenzio dalla parola poetica. Non ho mai considerato la poesia come un mero esercizio di stile o una ricerca di rime. Per me, la poesia è un'emorragia dell'inconscio, un grido sussurrato che rompe il normale scorrere del tempo.\n\nNel mio volume 'Pensieri Dispersi', ho cercato di intrappolare quei momenti in cui la realtà sembra sfaldarsi. Quegli attimi in cui ti guardi allo specchio e non ti riconosci, in cui il confine tra ciò che sei e ciò che gli altri vedono si dissolve. La poesia non deve spiegare nulla. Il suo compito non è dare risposte, ma scardinare le nostre certezze, costringendoci a sostare in una terra di mezzo dove l'eco dell'Altrove diventa percepibile.\n\nOgni verso è una goccia di cera fusa che cade su una ferita aperta. Brucia, ma allo stesso tempo sigilla. È un processo di purificazione attraverso il caos. Quando scrivo una poesia, mi spoglio di ogni armatura logica o narrativa. Sono solo un frammento nel cosmo, che vibra cercando la propria risonanza. Ed è proprio in questa nudità assoluta che si nasconde la forza più grande dell'arte: la capacità di toccare l'anima di chi legge, facendogli sentire che la sua solitudine è, in fondo, profondamente condivisa.",
     readTime: "4 min"
   }
 ];
