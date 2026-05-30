@@ -28,7 +28,8 @@ import {
   Check,
   Palette,
   ArrowRight,
-  Code
+  Code,
+  Menu
 } from "lucide-react";
 
 import { NOVELS, POEMS, ARTPIECES, BLOGPOSTS } from "./data";
@@ -59,6 +60,7 @@ export default function App() {
   const [readerNovel, setReaderNovel] = useState<Novel | null>(null);
   const [readPost, setReadPost] = useState<Blogpost | null>(null);
   const [heroNovelIndex, setHeroNovelIndex] = useState(0);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
 
 
@@ -210,9 +212,51 @@ export default function App() {
               ))}
             </nav>
 
-            {/* Right spacer for centering */}
-            <div className="w-9" />
+            {/* Right spacer for centering (desktop) */}
+            <div className="hidden md:block w-9" />
+
+            {/* Mobile Menu Toggle Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden p-2 text-gold-accent hover:text-gold-bright transition-colors focus:outline-hidden"
+              aria-label="Toggle Menu"
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
           </div>
+
+          {/* Mobile Menu Overlay */}
+          <AnimatePresence>
+            {isMobileMenuOpen && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="absolute top-full left-0 w-full bg-midnight/95 backdrop-blur-xl border-b border-gold-accent/20 md:hidden flex flex-col px-8 overflow-hidden shadow-2xl z-40"
+              >
+                <div className="py-6 flex flex-col gap-6">
+                  {[
+                    { id: "introduce", label: "L'Autore" },
+                    { id: "portali", label: "Portali Universali" },
+                    { id: "blog", label: "Riflessioni" },
+                    { id: "contatti", label: "Scrivimi" }
+                  ].map((link) => (
+                    <button 
+                      key={link.id}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        scrollToSection(link.id);
+                      }} 
+                      className="text-left font-display text-lg tracking-widest uppercase text-gold-accent hover:text-ivory transition duration-300 w-fit"
+                    >
+                      {link.label}
+                    </button>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           {/* Dynamic scroll progress indicator */}
           <div 
