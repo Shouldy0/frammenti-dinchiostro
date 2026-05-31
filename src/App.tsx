@@ -135,13 +135,34 @@ export default function App() {
     }
   };
 
-  const handleContactSubmit = (e: FormEvent) => {
+  const handleContactSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setContactSuccess(true);
-    setTimeout(() => {
-      setContactSuccess(false);
-      setContactForm({ name: "", email: "", message: "", category: "Collaborazione" });
-    }, 4000);
+    
+    try {
+      await fetch("https://formsubmit.co/ajax/daianavaiani20@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: `Nuovo messaggio da ${contactForm.name} - ${contactForm.category}`,
+          nome: contactForm.name,
+          email_mittente: contactForm.email,
+          categoria: contactForm.category,
+          messaggio: contactForm.message
+        })
+      });
+      
+      setContactSuccess(true);
+      setTimeout(() => {
+        setContactSuccess(false);
+        setContactForm({ name: "", email: "", message: "", category: "Collaborazione" });
+      }, 4000);
+    } catch (error) {
+      console.error("Errore nell'invio del modulo", error);
+      alert("Si è verificato un errore durante l'invio del messaggio. Riprova più tardi.");
+    }
   };
 
   const scrollToSection = (id: string) => {
@@ -801,7 +822,7 @@ export default function App() {
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="w-4 h-4 text-gold-accent/40" />
-                    <span>daianavaiani67@gmail.com</span>
+                    <span>daianavaiani20@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-4 h-4 text-gold-accent/40" />
