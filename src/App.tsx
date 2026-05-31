@@ -135,24 +135,20 @@ export default function App() {
     }
   };
 
-  const handleContactSubmit = async (e: FormEvent) => {
+  const handleContactSubmit = (e: FormEvent) => {
     e.preventDefault();
     
     try {
-      await fetch("https://formsubmit.co/ajax/daianavaiani20@gmail.com", {
-        method: "POST",
-        headers: { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          _subject: `Nuovo messaggio da ${contactForm.name} - ${contactForm.category}`,
-          nome: contactForm.name,
-          email_mittente: contactForm.email,
-          categoria: contactForm.category,
-          messaggio: contactForm.message
-        })
-      });
+      const subject = encodeURIComponent(`Nuovo messaggio da ${contactForm.name} - ${contactForm.category}`);
+      const body = encodeURIComponent(
+        `Nome d'Inchiostro: ${contactForm.name}\n` +
+        `Email per risposta: ${contactForm.email}\n` +
+        `Oggetto: ${contactForm.category}\n\n` +
+        `Messaggio:\n${contactForm.message}`
+      );
+      
+      // Apri il client di posta predefinito
+      window.location.href = `mailto:daianavaiani20@gmail.com?subject=${subject}&body=${body}`;
       
       setContactSuccess(true);
       setTimeout(() => {
@@ -160,8 +156,8 @@ export default function App() {
         setContactForm({ name: "", email: "", message: "", category: "Collaborazione" });
       }, 4000);
     } catch (error) {
-      console.error("Errore nell'invio del modulo", error);
-      alert("Si è verificato un errore durante l'invio del messaggio. Riprova più tardi.");
+      console.error("Errore nell'apertura del client mail", error);
+      alert("Impossibile aprire il client di posta. Puoi scrivermi direttamente a daianavaiani20@gmail.com");
     }
   };
 
