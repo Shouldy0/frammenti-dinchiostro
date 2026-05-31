@@ -215,7 +215,7 @@ export default function ChapterReader({ novel, onClose }: ChapterReaderProps) {
           </div>
 
           {/* Book Info Block */}
-          <div className="p-4 bg-[#09111c]/60 border border-gold-accent/10 rounded-xs space-y-3">
+          <div className="p-4 bg-[#09111c]/60 border border-gold-accent/10 rounded-xs space-y-3 flex flex-col">
             <div className={`font-mono text-[9px] tracking-widest uppercase ${activeTheme.accentText}`}>
               {novel.genre}
             </div>
@@ -226,6 +226,16 @@ export default function ChapterReader({ novel, onClose }: ChapterReaderProps) {
             <p className="font-serif italic text-xs text-gold-accent/60 leading-relaxed line-clamp-3">
               {novel.synopsis}
             </p>
+            {novel.purchaseLink && (
+              <a
+                href={novel.purchaseLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 w-full flex items-center justify-center gap-2 bg-gold-accent/10 hover:bg-gold-accent/20 border border-gold-accent/30 text-ivory text-xs uppercase tracking-widest py-2 rounded-sm transition-all hover:border-gold-accent"
+              >
+                Acquista Libro
+              </a>
+            )}
           </div>
 
           {/* Chapters List */}
@@ -368,6 +378,21 @@ export default function ChapterReader({ novel, onClose }: ChapterReaderProps) {
             <div className="h-[1px] w-12 bg-gradient-to-l from-gold-accent/60 to-transparent" />
             <span className="w-1.5 h-1.5 rounded-full bg-gold-accent" />
           </div>
+
+          {/* Purchase link at the end of content */}
+          {novel.purchaseLink && (
+            <div className="flex justify-center mt-12 mb-4">
+              <a
+                href={novel.purchaseLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-serif text-sm text-ivory bg-gold-accent/10 hover:bg-gold-accent/20 border border-gold-accent/30 px-6 py-3 rounded-sm transition-all hover:border-gold-accent flex items-center gap-2"
+              >
+                <span>Acquista "{novel.title}" su Amazon</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-4 h-4" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+              </a>
+            </div>
+          )}
 
         </article>
 
