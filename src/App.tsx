@@ -991,7 +991,20 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="flex justify-end items-center mt-10 pt-6 border-t border-ivory/5">
+                <div className="flex justify-between items-center mt-10 pt-6 border-t border-ivory/5">
+                  {selectedNovel.purchaseLink ? (
+                    <a
+                      href={selectedNovel.purchaseLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-serif text-sm text-ivory bg-gold-accent/10 hover:bg-gold-accent/20 border border-gold-accent/30 px-6 py-2.5 rounded-sm transition-all hover:border-gold-accent flex items-center gap-2"
+                    >
+                      <span>Acquista su Amazon</span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-4 h-4" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </a>
+                  ) : (
+                    <div></div>
+                  )}
                   <button
                     onClick={() => setSelectedNovel(null)}
                     className="font-serif text-sm text-gold-accent/50 hover:text-gold-accent cursor-pointer transition"

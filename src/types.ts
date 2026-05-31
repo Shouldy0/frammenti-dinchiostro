@@ -20,6 +20,7 @@ export interface Novel {
   coverQuery: string; // for styling or visual art cue
   publishedYear: string;
   chapters?: Chapter[];
+  purchaseLink?: string;
 }
 
 export interface Poem {

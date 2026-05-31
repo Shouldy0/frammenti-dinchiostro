@@ -238,6 +238,7 @@ L'uomo non disse altro. Allungò una mano guantata verso di lei. Maria aprì la 
     atmosphere: "Vecchia libreria di Trieste, orologi ad acqua, polvere dorata, portali invisibili",
     coverQuery: "antique_library_dust_gold_accents",
     publishedYear: "2021",
+    purchaseLink: "http://amazon.it/Pensieri-dispersi-Daiana-Vaiani/dp/B09LGN98BS/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3C6R0NPG9PDON&dib=eyJ2IjoiMSJ9.K6GDiwV6YNEPW-iXL05h0A.6W4mg55wTAHtbJvbacFImw7FNmb5rFMcgq9JMgeWpLA&dib_tag=se&keywords=pensieri+dispersi+daiana+vaiani&qid=1780213820&s=books&sprefix=pensieri+dispersi+daiana+vaiani%2Cstripbooks%2C118&sr=1-1",
     chapters: [
       {
         id: "c1-echialtrove",
