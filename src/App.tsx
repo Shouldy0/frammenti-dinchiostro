@@ -135,29 +135,38 @@ export default function App() {
     }
   };
 
-  const handleContactSubmit = (e: FormEvent) => {
+  const handleContactSubmit = async (e: FormEvent) => {
     e.preventDefault();
     
     try {
-      const subject = encodeURIComponent(`Nuovo messaggio da ${contactForm.name} - ${contactForm.category}`);
-      const body = encodeURIComponent(
-        `Nome d'Inchiostro: ${contactForm.name}\n` +
-        `Email per risposta: ${contactForm.email}\n` +
-        `Oggetto: ${contactForm.category}\n\n` +
-        `Messaggio:\n${contactForm.message}`
-      );
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          access_key: "e97e3990-89b5-41d4-9ad5-f53cb13e5e21",
+          subject: `Nuovo messaggio da ${contactForm.name} - ${contactForm.category}`,
+          name: contactForm.name,
+          email: contactForm.email,
+          categoria: contactForm.category,
+          message: contactForm.message
+        })
+      });
       
-      // Apri il client di posta predefinito
-      window.location.href = `mailto:daianavaiani20@gmail.com?subject=${subject}&body=${body}`;
-      
-      setContactSuccess(true);
-      setTimeout(() => {
-        setContactSuccess(false);
-        setContactForm({ name: "", email: "", message: "", category: "Collaborazione" });
-      }, 4000);
+      if (response.ok) {
+        setContactSuccess(true);
+        setTimeout(() => {
+          setContactSuccess(false);
+          setContactForm({ name: "", email: "", message: "", category: "Collaborazione" });
+        }, 4000);
+      } else {
+        throw new Error("Impossibile inviare il messaggio");
+      }
     } catch (error) {
-      console.error("Errore nell'apertura del client mail", error);
-      alert("Impossibile aprire il client di posta. Puoi scrivermi direttamente a daianavaiani20@gmail.com");
+      console.error("Errore nell'invio del form", error);
+      alert("Si è verificato un errore durante l'invio del messaggio. Riprova più tardi o scrivimi direttamente a daianavaiani20@gmail.com");
     }
   };
 
